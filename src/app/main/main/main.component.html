@@ -1,0 +1,12 @@
+<p>main works!</p>
+<button type="button" [routerLink]='registerVar'> Click here for Register </button> 
+<br> <br>
+<button type="button" [routerLink]='loginVar'> Click here for Login </button>
+<!-- <input type="text"  id="Inp"> 
+<button type="button" (click)="sendMessage()"> Submit </button> -->
+
+
+<app-leftnav (sendMessagecomp)="receiveMessage($event)"> </app-leftnav>
+<div>
+    {{receiveMessagecomp}}
+</div>

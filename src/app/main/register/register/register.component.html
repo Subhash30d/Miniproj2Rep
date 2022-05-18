@@ -1,0 +1,20 @@
+<p>register works!</p>
+<p style="background-color: black ; color: white;"> This is the Registration Form </p>
+<div class="login-Form"> 
+    <form #registerForm="ngForm" (ngSubmit)="submitForm(registerForm)">
+        <input type="text" placeholder="First Name" ngModel name="FirstName" #FirstName required>
+        <br>
+        <input type="text" placeholder="Last Name" ngModel name="LastName" #LastName required>
+        <br>
+        <input type="email" placeholder="Email" ngModel name="email" #email required>
+        <br>
+        <input type="number" placeholder="PhoneNumber" ngModel name="phone" #phone required>
+        <br>
+        <input type="password" placeholder="Password" ngModel name="password" #password required>
+        <br>
+        <input type="password" placeholder="Confirm Password" ngModel name="confirmPassword" #confirmPassword required>
+        <br> <br> 
+	<button type="submit"> Submit </button>
+    <br>
+    </form>
+</div>
